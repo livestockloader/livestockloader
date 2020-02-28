@@ -839,7 +839,10 @@ input[type="checkbox"] {
 }
 
 .header-badge {
-  height:50px;  
+  height:45px;  
+  border-radius: 6px;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 /****************************/
@@ -1124,6 +1127,9 @@ input[type="checkbox"] {
   margin-bottom: 1.25rem;
 }
 
+.basic-4 .llbadge {
+  height:200px;
+}
 /***********************/
 /*     13. Contact     */
 /***********************/
