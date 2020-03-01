@@ -58,12 +58,12 @@ html {
 
 body,
 p {
-  color var(--text-main);
+  color: var(--text-main);
   font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
 
 .p-large {
-  color:var(--text-main);
+  color: var(--text-main);
   font: 400 1rem/1.5rem "Open Sans", sans-serif;
 }
 
@@ -389,8 +389,8 @@ input[type="checkbox"] {
   width: 100%;
   height: 3.125rem;
   border: 1px solid var(--button-pop);
-  border-radius: .5rem;
-  background-color:var(--button-pop);
+  border-radius: 0.5rem;
+  background-color: var(--button-pop);
   color: var(--text-main);
   font: 700 1.5rem/1.75rem "Open Sans", sans-serif;
   cursor: pointer;
@@ -704,7 +704,6 @@ input[type="checkbox"] {
   color: var(--text-pop);
 }
 
-
 /* Dropdown Menu */
 .navbar-custom .dropdown:hover > .dropdown-menu {
   display: block; /* this makes the dropdown menu stay open while hovering it */
@@ -830,7 +829,7 @@ input[type="checkbox"] {
 
 .header .p-large {
   margin-bottom: 2rem;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .header .btn-solid-lg {
@@ -839,7 +838,7 @@ input[type="checkbox"] {
 }
 
 .header-badge {
-  height:45px;  
+  height: 45px;
   border-radius: 6px;
   margin-right: 30px;
   margin-bottom: 10px;
@@ -1055,9 +1054,9 @@ input[type="checkbox"] {
   display: none;
 }
 
-.tab-icon:hover .img-top, .tab-icon:active .img-top {
+.tab-icon:hover .img-top,
+.tab-icon:active .img-top {
   display: inline;
-  
 }
 /*************************/
 /*     07. Details 1     */
@@ -1128,7 +1127,7 @@ input[type="checkbox"] {
 }
 
 .basic-4 .llbadge {
-  height:200px;
+  height: 200px;
 }
 /***********************/
 /*     13. Contact     */
@@ -1378,7 +1377,7 @@ a:hover.back-to-top {
   }
 
   .navbar-custom.top-nav-collapse .nav-item .nav-link {
-    color:var(--text-main);
+    color: var(--text-main);
   }
 
   .navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
