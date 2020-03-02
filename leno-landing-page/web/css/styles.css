@@ -43,8 +43,10 @@ Colors:
 /*************************/
 :root {
   --text-main: #423f33;
+  --text-hover: rgb(56, 53, 41);
   --text-pop: #e2bd43;
   --button-pop: #eac547;
+  --button-hover: #ecce6c;
 }
 
 /******************************/
@@ -191,18 +193,18 @@ a.white {
 .btn-outline-reg {
   display: inline-block;
   padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-  border: 0.125rem solid #00c9db;
+  border: 0.125rem solid var(--button-pop);
   border-radius: 2rem;
-  background-color: transparent;
-  color: #00c9db;
+  background-color: var(--button-pop);
+  color: var(--text-main);
   font: 700 0.75rem/0 "Open Sans", sans-serif;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .btn-outline-reg:hover {
-  background-color: #00c9db;
-  color: #fff;
+  background-color: var(--button-hover);
+  color: var(--text-hover);
   text-decoration: none;
 }
 
@@ -398,8 +400,8 @@ input[type="checkbox"] {
 }
 
 .form-control-submit-button:hover {
-  background-color: transparent;
-  color: #00c9db;
+  background-color: var(--button-hover);
+  color: var(--text-hover);
 }
 
 /* Form Success And Error Message Formatting */
@@ -1237,13 +1239,14 @@ a.back-to-top {
   width: 2.625rem;
   height: 2.625rem;
   border-radius: 1.875rem;
-  background: #00c9db url("../images/up-arrow.png") no-repeat center 47%;
+  background: var(--text-main) url("../images/up-arrow.png") no-repeat center
+    47%;
   background-size: 1.125rem 1.125rem;
   text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-  background-color: #36edfd;
+  background-color: var(--text-hover);
 }
 
 /***************************/
@@ -1252,14 +1255,12 @@ a:hover.back-to-top {
 .ex-header {
   padding-top: 8rem;
   padding-bottom: 5rem;
-  background: linear-gradient(to bottom right, #2c1a7e, #5557db);
   text-align: center;
 }
 
 .ex-basic-1 {
   padding-top: 2rem;
   padding-bottom: 0.875rem;
-  background-color: #2f2c3d;
 }
 
 .ex-basic-1 .breadcrumbs {
@@ -1274,7 +1275,6 @@ a:hover.back-to-top {
 .ex-basic-2 {
   padding-top: 4.75rem;
   padding-bottom: 4rem;
-  background-color: #262431;
 }
 
 .ex-basic-2 h3 {
