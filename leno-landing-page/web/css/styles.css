@@ -141,7 +141,7 @@ a.white {
 }
 
 .testimonial-author {
-  font: 700 1rem/1.5rem "Montserrat", sans-serif;
+  font: 700 1rem/1.5rem "Open Sans", sans-serif;
 }
 
 .btn-solid-reg {
@@ -674,19 +674,22 @@ input[type="checkbox"] {
 /**************************/
 .navbar-custom {
   background-color: #fff;
-  box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-  font: 700 0.75rem/2rem "Open Sans", sans-serif;
+  box-shadow: 0 0.0625rem 0.375rem 0 rgba(233, 196, 196, 0.1);
+  font: 700 0.75rem/1.5rem "Open Sans", sans-serif;
   transition: all 0.2s ease;
+  letter-spacing: -0.5px;
 }
 
 .navbar-custom .navbar-brand.logo-image img {
   margin-bottom: 1px;
+  height: 35px;
+  font-size: 0.5rem;
+
   -webkit-backface-visibility: hidden;
 }
 
 .navbar-custom .navbar-brand.logo-text {
-  font: 700 2.375rem/1.5rem "Open Sans", sans-serif;
-  color: #fff;
+  font: 700 1rem/1.5rem "Open Sans", sans-serif;
   letter-spacing: -0.5px;
   text-decoration: none;
 }
@@ -770,7 +773,7 @@ input[type="checkbox"] {
 .navbar-custom .navbar-toggler {
   border: none;
   color: var(--text-main);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .navbar-custom
@@ -802,24 +805,26 @@ input[type="checkbox"] {
 /*    04. Header     */
 /*********************/
 .header {
-  background: #fff url("../images/header-background.png") center center
+  background: #fff url("../images/header-background-c.png") center center
     no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
 }
 
 .header .header-content {
-  padding-top: 8.5rem;
-  padding-bottom: 7rem;
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
   text-align: left;
 }
 
 .header .text-container {
   margin-bottom: 3rem;
-  width: 60vw;
+  width: 90vw;
+  text-align: center;
 }
 
 .header h1 {
-  font-size: 45px;
+  font-size: 26px;
 }
 
 .header #js-rotating {
@@ -828,7 +833,7 @@ input[type="checkbox"] {
 
 .header .p-large {
   margin-bottom: 2rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .header .btn-solid-lg {
@@ -837,7 +842,7 @@ input[type="checkbox"] {
 }
 
 .header-badge {
-  height: 45px;
+  height: 35px;
   border-radius: 6px;
   margin-right: 30px;
   margin-bottom: 10px;
@@ -1214,13 +1219,17 @@ input[type="checkbox"] {
 .copyright {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
-  background-color: #262431;
+  background-color: #ffffff;
   text-align: center;
 }
 
 .copyright .p-small {
   color: var(--text-main);
   opacity: 0.6;
+}
+
+.copyright a {
+  text-decoration: none;
 }
 
 /**********************************/
@@ -1329,8 +1338,9 @@ a:hover.back-to-top {
   }
 
   h1 {
-    font: 700 3.25rem/3.75rem "Roboto", sans-serif;
+    font: 700 3.25rem/3.15rem "Open Sans", sans-serif;
   }
+
   /* end of general styles */
 
   /* Navigation */
@@ -1341,8 +1351,16 @@ a:hover.back-to-top {
     max-height: 100px;
   }
 
-  .navbar-custom .navbar-brand.logo-text {
-    color: #fff;
+  .navbar-custom .navbar-brand {
+    color: var(--text-main);
+    text-decoration: none;
+    font: 1rem "Open Sans", sans-serf;
+    font-weight: 900;
+  }
+
+  .navbar-custom .navbar-brand.a:hover {
+    color: var(--text-main);
+    text-decoration: none;
   }
 
   .navbar-custom .navbar-nav {
@@ -1396,8 +1414,23 @@ a:hover.back-to-top {
   /* end of navigation */
 
   /* Header */
+  .header h1 {
+    font-size: 40px;
+  }
   .header .header-content {
     padding-top: 8rem;
+  }
+
+  .header .text-container {
+    margin-bottom: 3rem;
+    width: 65vw;
+    text-align: left;
+    padding: 0px 20px 90px 27px;
+  }
+
+  .header .text-container .p-large {
+    padding-right: 48px;
+    font-weight: 500;
   }
   /* end of header */
 
@@ -1472,26 +1505,14 @@ a:hover.back-to-top {
 
   /* Download */
   .basic-4 {
-    background-size: contain;
+    background-size: cover;
   }
 
-  /* Details Lightboxes */
-  .lightbox-basic {
-    padding: 3rem 3rem;
+  .basic-4 .p-small {
+    width: 46%;
+    margin: auto;
+    padding-bottom: 2rem;
   }
-  /* end of details lightboxes */
-
-  /* Screenshots */
-  .slider-2 .swiper-button-prev {
-    width: 1.375rem;
-    background-size: 1.375rem 2.125rem;
-  }
-
-  .slider-2 .swiper-button-next {
-    width: 1.375rem;
-    background-size: 1.375rem 2.125rem;
-  }
-  /* end of screenshots */
 
   /* Contact */
   .form .list-unstyled li {
@@ -1624,31 +1645,6 @@ a:hover.back-to-top {
   }
   /* end of features */
 
-  /* Download */
-  .basic-4 {
-    background-size: cover;
-  }
-
-  /* Video */
-  .basic-1 .image-container {
-    max-width: 53.125rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  /* end of video */
-
-  /* Details 1 */
-  .basic-2 img {
-    margin-bottom: 0;
-  }
-
-  .basic-2 .text-container {
-    margin-top: 2.625rem;
-  }
-
-  .basic-2 h3 {
-    padding-top: 100px;
-  }
   /* end of details 1 */
 
   /* Details 2 */
@@ -1657,6 +1653,12 @@ a:hover.back-to-top {
     margin-bottom: 0;
   }
   /* end of details 2 */
+
+  /* Download */
+  .basic-4 .push-to-center {
+    padding: 10px;
+    margin-left: 25rem;
+  }
 
   /* Details Lightboxes */
   .lightbox-basic img {
@@ -1682,8 +1684,6 @@ a:hover.back-to-top {
 
   .basic-4 .text-container {
     margin-top: 7rem;
-    margin-bottom: 0;
-    text-align: left;
   }
   /* end of download */
 
@@ -1700,7 +1700,7 @@ a:hover.back-to-top {
   }
 
   .counter #counter .counter-value {
-    font: 700 4.25rem/4.5rem "Montserrat", sans-serif;
+    font: 700 4.25rem/4.5rem "Open Sans", sans-serif;
   }
   /* end of statistics */
 
@@ -1741,6 +1741,9 @@ a:hover.back-to-top {
   /* end of general styles */
 
   /* Header */
+  .header {
+    background-size: cover;
+  }
   .header .text-container {
     margin-top: 7.5rem;
     margin-left: 2.5rem;
@@ -1815,7 +1818,7 @@ a:hover.back-to-top {
 
   /* Details 1 */
   .basic-2 .text-container {
-    margin-top: 4.5rem;
+    margin-top: 7.5rem;
     margin-left: 4rem;
     margin-right: 1.5rem;
   }
@@ -1826,6 +1829,10 @@ a:hover.back-to-top {
     margin-top: 4.5rem;
     margin-right: 3.5rem;
     margin-left: 2rem;
+  }
+
+  .basic-3 .shift-up {
+    margin-top: -18rem;
   }
   /* end of details 2 */
 
@@ -1875,6 +1882,15 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 2500px) {
+  /* Header */
+  .header .header-content {
+    padding-top: 5rem;
+    padding-bottom: 38rem;
+  }
+
+  .header .text-container {
+    margin-left: -24rem;
+  }
 
   /* Download */
   .basic-4 {
@@ -1882,5 +1898,10 @@ a:hover.back-to-top {
       no-repeat;
     background-size: cover;
     min-height: 700px;
+    padding-top: 13.75rem;
+    padding-bottom: 23rem;
+  }
+  .basic-4 .text-container {
+    margin-bottom: 0.5rem;
   }
 }
