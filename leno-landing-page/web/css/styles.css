@@ -1542,10 +1542,15 @@ a:hover.back-to-top {
     margin-left: auto;
   }
 
-  ul li .checkbox-list {
-    font-family: 'FontAwesome';
-    content: '\f067';
+  .ex-basic-2 ul li .checkbox-list {
+    font-family: "FontAwesome";
+    content: "\f067";
   }
+
+  .ex-basic-2 ul {
+    line-height: 150%;
+  }
+
   /* end of extra pages */
 }
 /* end of min-width width 768px */
