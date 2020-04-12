@@ -819,7 +819,7 @@ input[type="checkbox"] {
 
 .header .text-container {
   margin-bottom: 3rem;
-  width: 90vw;
+  width: 80vw;
   text-align: center;
 }
 
@@ -833,7 +833,7 @@ input[type="checkbox"] {
 
 .header .p-large {
   margin-bottom: 2rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .header .btn-solid-lg {
@@ -1596,7 +1596,7 @@ a:hover.back-to-top {
 
   /* Header */
   .header .header-content {
-    padding-top: 13rem;
+    /* padding-top: 13rem; */
     padding-bottom: 10rem;
     text-align: left;
   }
@@ -1754,8 +1754,9 @@ a:hover.back-to-top {
   .header {
     background-size: cover;
   }
+
   .header .text-container {
-    margin-top: 7.5rem;
+    /* margin-top: 1rem; */
     margin-left: 2.5rem;
   }
 
@@ -1889,6 +1890,34 @@ a:hover.back-to-top {
   /* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+@media (min-width: 1400px) {
+  .header {
+    background-size: cover;
+    height: 800px;
+  }
+}
+@media (min-width: 1600px) {
+  .header {
+    background-size: cover;
+    height: 900px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header {
+    background-size: cover;
+    height: 1000px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .header {
+    background-size: cover;
+    height: 1100px;
+  }
+}
+
 
 /* Min-width width 1200px */
 @media (min-width: 2500px) {
