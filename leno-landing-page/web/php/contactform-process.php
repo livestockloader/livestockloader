@@ -19,14 +19,14 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
-} else {
-    $terms = $_POST["terms"];
-}
+// if (empty($_POST["terms"])) {
+//     $errorMSG = "Terms is required ";
+// } else {
+//     $terms = $_POST["terms"];
+// }
 
-$EmailTo = "yourname@domain.com";
-$Subject = "New message from Leno landing page";
+$EmailTo = "hello@livestockoader.com";
+$Subject = "New message from Livestock Loader contact form";
 
 // prepare email body text
 $Body = "";
@@ -39,9 +39,9 @@ $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
-$Body .= "Terms: ";
-$Body .= $terms;
-$Body .= "\n";
+// $Body .= "Terms: ";
+// $Body .= $terms;
+// $Body .= "\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);

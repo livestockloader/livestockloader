@@ -267,7 +267,7 @@
       var name = $("#cname").val();
       var email = $("#cemail").val();
       var message = $("#cmessage").val();
-      var terms = $("#cterms").val();
+      // var terms = $("#cterms").val();
       $.ajax({
         type: "POST",
         url: "php/contactform-process.php",
@@ -277,9 +277,7 @@
           "&email=" +
           email +
           "&message=" +
-          message +
-          "&terms=" +
-          terms,
+          message,
         success: function(text) {
           if (text == "success") {
             cformSuccess();
