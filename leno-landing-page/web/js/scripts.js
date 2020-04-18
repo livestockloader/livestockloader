@@ -270,7 +270,7 @@
       // var terms = $("#cterms").val();
       $.ajax({
         type: "POST",
-        url: "php/contactform-process.php",
+        url: "../php/contactform-process.php",
         data:
           "name=" +
           name +
