@@ -819,7 +819,7 @@ input[type="checkbox"] {
 
 .header .text-container {
   margin-bottom: 3rem;
-  width: 90vw;
+  /* width: 80vw; */
   text-align: center;
 }
 
@@ -833,7 +833,7 @@ input[type="checkbox"] {
 
 .header .p-large {
   margin-bottom: 2rem;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .header .btn-solid-lg {
@@ -1111,6 +1111,7 @@ input[type="checkbox"] {
   padding-bottom: 6.75rem;
   background: url("../images/download-background.png") center center no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 .basic-4 .text-container {
@@ -1421,6 +1422,10 @@ a:hover.back-to-top {
     padding-top: 8rem;
   }
 
+  .header .p-large {
+    font-size: 1.2rem;
+  }
+
   .header .text-container {
     margin-bottom: 3rem;
     width: 65vw;
@@ -1596,7 +1601,7 @@ a:hover.back-to-top {
 
   /* Header */
   .header .header-content {
-    padding-top: 13rem;
+    /* padding-top: 13rem; */
     padding-bottom: 10rem;
     text-align: left;
   }
@@ -1693,7 +1698,7 @@ a:hover.back-to-top {
   }
 
   .basic-4 .text-container {
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
   /* end of download */
 
@@ -1754,9 +1759,12 @@ a:hover.back-to-top {
   .header {
     background-size: cover;
   }
+
   .header .text-container {
-    margin-top: 7.5rem;
+    /* margin-top: 1rem; */
     margin-left: 2.5rem;
+    width: 50vw;
+
   }
 
   .header .image-container {
@@ -1847,8 +1855,13 @@ a:hover.back-to-top {
   /* end of details 2 */
 
   /* Download */
+  .basic-4 {
+    padding-top: 7.75rem;
+    height: 600px;
+  }
+
   .basic-4 .text-container {
-    margin-top: 11rem;
+    margin-top: 0rem;
   }
 
   .basic-4 .image-container {
@@ -1890,6 +1903,38 @@ a:hover.back-to-top {
 }
 /* end of min-width width 1200px */
 
+/* @media (min-width: 1400px) {
+  .header {
+    background-size: cover;
+    height: 800px;
+  }
+} */
+@media (min-width: 1450px) {
+  .header {
+    background-size: cover;
+    height: 900px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header {
+    background-size: cover;
+    height: 1000px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .header {
+    background-size: cover;
+    height: 1100px;
+  }
+  .basic-4 {
+    /* padding-top: 7.75rem; */
+    height: 700px;
+  }
+}
+
+
 /* Min-width width 1200px */
 @media (min-width: 2500px) {
   /* Header */
@@ -1903,7 +1948,7 @@ a:hover.back-to-top {
   }
 
   /* Download */
-  .basic-4 {
+  /* .basic-4 {
     background: url("../images/download-background-crop.png") center center
       no-repeat;
     background-size: cover;
@@ -1913,5 +1958,9 @@ a:hover.back-to-top {
   }
   .basic-4 .text-container {
     margin-bottom: 0.5rem;
+  } */
+  .basic-4 {
+    /* padding-top: 7.75rem; */
+    height: 800px;
   }
 }
