@@ -66,10 +66,10 @@ p {
 }
 
 .apple-badge{
-  width: 118px;
+  width: 120px;
 }
 .google-badge{
-  width: 150px;
+  width: 120px;
 }
 
 .p-large {
@@ -811,10 +811,6 @@ input[type="checkbox"] {
 /*********************/
 /*    04. Header     */
 /*********************/
-.header {
-	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
-	background-size: cover;
-}
 
 .header .header-content {
 	padding-top: 7rem;
@@ -1084,7 +1080,7 @@ input[type="checkbox"] {
 /*************************/
 .basic-3 {
   /* padding-top: 3.5rem; */
-  /* padding-bottom: 7.25rem; */
+  padding-bottom: 4.25rem;
 }
 
 .basic-3 .text-container {
@@ -1105,8 +1101,7 @@ input[type="checkbox"] {
 .basic-4 {
   padding-top: 4.5rem;
   padding-bottom: 6.75rem;
-  background-image: linear-gradient(to bottom, white, 30%, transparent),
-    url("../images/cow-bg-crop.png");
+  background-image: url("../images/cow-bg-crop.png");
   /* background: url("../images/cow-bg-crop.png") center center no-repeat; */
   background-size: cover;
   background-position: bottom;
@@ -1881,25 +1876,8 @@ a:hover.back-to-top {
     font: 700 2.85rem/3rem "Open Sans", sans-serif;
   }
 }
-/* @media (min-width: 1450px) {
-  .header {
-    background-size: cover;
-    height: 900px;
-  }
-} */
-
-/* @media (min-width: 1800px) {
-  .header {
-    background-size: cover;
-    height: 1000px;
-  }
-} */
 
 @media (min-width: 2100px) {
-  /* .header {
-    background-size: cover;
-    height: 1100px;
-  } */
   .basic-4 {
     padding-top: 7.75rem;
     height: 700px;
@@ -1909,30 +1887,7 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 2500px) {
-  /* Header */
-  /* .header .header-content {
-    padding-top: 5rem;
-    padding-bottom: 38rem;
-  }
-
-  .header .text-container {
-    margin-left: -24rem;
-  } */
-
-  /* Download */
-  /* .basic-4 {
-    background: url("../images/download-background-crop.png") center center
-      no-repeat;
-    background-size: cover;
-    min-height: 700px;
-    padding-top: 13.75rem;
-    padding-bottom: 23rem;
-  }
-  .basic-4 .text-container {
-    margin-bottom: 0.5rem;
-  } */
   .basic-4 {
-    /* padding-top: 7.75rem; */
     height: 800px;
   }
 }
