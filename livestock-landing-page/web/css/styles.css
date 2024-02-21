@@ -1871,6 +1871,19 @@ a:hover.back-to-top {
 }
 /* end of min-width width 1200px */
 
+.cancellation-form{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 1.75rem;
+}
+
+.cancellation-form .btn-outline-reg{
+  margin-top: 0;
+  width: 235px;
+}
+
 @media (min-width: 1400px) {
   .header h1 {
     font: 700 2.85rem/3rem "Open Sans", sans-serif;
